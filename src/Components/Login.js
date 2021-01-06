@@ -51,14 +51,17 @@ const Login = () => {
        <div className="col-sm-3"></div>
       <div className="col-sm-6">
     <div className="card cardclass mx-auto mt-5  text-white">
-      <h2 className="my-3"> Login Using Auth0 </h2>
+      <h2 className="my-3">Login Using Auth0</h2>
       <form onSubmit={SubmitIT}>
         <table className="table">
        <tr>
        
           <td>
+           
+             
        <input
-       className="form-control"
+       name='username'
+       className="form-control e1"
        placeholder="Enter Email"
             type="email"
             value={email}
@@ -70,8 +73,9 @@ const Login = () => {
            
           <td>
       <input 
+            id='psd'
              className="form-control"
-             placeholder="Enter Email"
+             placeholder="Enter Password"
             type="password"
             value={password}
             onChange={(e) => {
@@ -79,7 +83,7 @@ const Login = () => {
             }}
           /></td></tr>
       
-        <button className="btn btn-outline-dark text-white font-weight-bold mt-3 btn-lg " type="submit">Click to Submit</button>
+        <button title="b1" className="btn btn-outline-dark text-white font-weight-bold mt-3 btn-lg " type="submit">Click to Submit</button>
         </table>
       </form>
     </div>
